@@ -7,32 +7,41 @@ export const PlayMode = ({ quiz, onClose, questionTime = 20 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [timeLeft, setTimeLeft] = useState(questionTime);
-
-  const question = quiz.questions[currentIndex];
+  const [displayedQuestion, setDisplayedQuestion] = useState(quiz.questions[0]);
 
   const handleReveal = () => setRevealed(true);
-  const handlePrev = () => setCurrentIndex((i) => i - 1);
-  const handleNext = () => setCurrentIndex((i) => i + 1);
+
+  const handleNext = () => {
+    setRevealed(false);
+    setTimeout(() => {
+      setCurrentIndex((i) => i + 1);
+    }, 300);
+  };
+
+  const handlePrev = () => {
+    setRevealed(false);
+    setTimeout(() => {
+      setCurrentIndex((i) => i - 1);
+    }, 300);
+  };
+
+  const question = displayedQuestion;
 
   useEffect(() => {
     if (revealed) return;
-
     if (timeLeft === 0) {
       setRevealed(true);
       return;
     }
-
-    const timer = setInterval(() => {
-      setTimeLeft((t) => t - 1);
-    }, 1000);
-
+    const timer = setInterval(() => setTimeLeft((t) => t - 1), 1000);
     return () => clearInterval(timer);
   }, [timeLeft, revealed]);
 
   useEffect(() => {
+    setDisplayedQuestion(quiz.questions[currentIndex]);
     setTimeLeft(questionTime);
     setRevealed(false);
-  }, [currentIndex, questionTime]);
+  }, [currentIndex, questionTime, quiz.questions]);
 
   return (
     <Stage>
