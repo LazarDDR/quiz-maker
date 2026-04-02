@@ -10,12 +10,12 @@ export const initialQuizzes = [
       },
       { id: "food-2", question: "Which drink is made from fermented grapes?", answer: "Wine" },
       { id: "food-3", question: "What cheese is used on pizza?", answer: "Mozzarella" },
-      { id: "food-4", question: "What fast food is the Big Mac?", answer: "Burger" },
+      { id: "food-4", question: "What type of food is the Big Mac?", answer: "Burger" },
       { id: "food-5", question: "Which country is sushi from?", answer: "Japan" },
       { id: "food-6", question: "What vegetable makes you cry when cut?", answer: "Onion" },
       { id: "food-7", question: "What is the main ingredient in hummus?", answer: "Chickpeas" },
       { id: "food-8", question: "What drink do cows produce?", answer: "Milk" },
-      { id: "food-9", question: "Which food is known as brain freeze?", answer: "Ice cream" },
+      { id: "food-9", question: "What food commonly causes brain freeze?", answer: "Ice cream" },
       {
         id: "food-10",
         question: "What spice is traditionally used in pumpkin pie?",
@@ -57,12 +57,16 @@ export const initialQuizzes = [
     id: "pub-quiz-6",
     title: "Sports Trivia",
     questions: [
-      { id: "sport-1", question: "How many players on a football team?", answer: "11" },
+      { id: "sport-1", question: "How many players are on a football team?", answer: "11" },
       { id: "sport-2", question: "Which sport uses a racket?", answer: "Tennis" },
       { id: "sport-3", question: "What color card means stop playing?", answer: "Red" },
       { id: "sport-4", question: "Which sport uses a hoop?", answer: "Basketball" },
       { id: "sport-5", question: "What sport is played at Wimbledon?", answer: "Tennis" },
-      { id: "sport-6", question: "Which country invented football?", answer: "England" },
+      {
+        id: "sport-6",
+        question: "Which country is considered the birthplace of football?",
+        answer: "England",
+      },
       { id: "sport-7", question: "What ball is used in golf?", answer: "Golf ball" },
       { id: "sport-8", question: "How many rings are on the Olympic logo?", answer: "Five" },
       { id: "sport-9", question: "Which sport uses a puck?", answer: "Ice hockey" },
@@ -109,7 +113,7 @@ export const initialQuizzes = [
       { id: "animal-8", question: "Which animal lives in the ocean?", answer: "Dolphin" },
       { id: "animal-9", question: "What insect makes honey?", answer: "Bee" },
       { id: "animal-10", question: "What animal has stripes?", answer: "Zebra" },
-      { id: "animal-11", question: "Which animal is man's best friend?", answer: "Dog" },
+      { id: "animal-11", question: "Which animal is known as man's best friend?", answer: "Dog" },
       { id: "animal-12", question: "What animal purrs?", answer: "Cat" },
       { id: "animal-13", question: "Which animal has tusks?", answer: "Elephant" },
       { id: "animal-14", question: "What animal howls?", answer: "Wolf" },
@@ -151,7 +155,7 @@ export const initialQuizzes = [
       { id: "rand-8", question: "What has wheels and an engine?", answer: "Car" },
       { id: "rand-9", question: "What do you wear on your feet?", answer: "Shoes" },
       { id: "rand-10", question: "What do you open with a key?", answer: "Door" },
-      { id: "rand-11", question: "What has pages but no words?", answer: "Notebook" },
+      { id: "rand-11", question: "What has pages but no writing?", answer: "Notebook" },
       { id: "rand-12", question: "What do you drink water from?", answer: "Glass" },
       { id: "rand-13", question: "What do you sit on?", answer: "Chair" },
       { id: "rand-14", question: "What tells the time?", answer: "Clock" },
@@ -165,7 +169,7 @@ export const initialQuizzes = [
       { id: "drunk-1", question: "What color is a mirror?", answer: "None" },
       {
         id: "drunk-2",
-        question: "If you drop soap on the floor, is the floor clean or the soap dirty?",
+        question: "If you drop soap on the floor, is the floor clean or is the soap dirty?",
         answer: "The soap is dirty",
       },
       {
@@ -177,7 +181,7 @@ export const initialQuizzes = [
       {
         id: "drunk-5",
         question: "What day is it when you don’t know what day it is?",
-        answer: "Drunk",
+        answer: "You're drunk",
       },
       { id: "drunk-6", question: "If tomatoes are a fruit, is ketchup a smoothie?", answer: "Yes" },
       {
@@ -199,7 +203,7 @@ export const initialQuizzes = [
       },
       {
         id: "drunk-12",
-        question: "What animal best represents drunk confidence?",
+        question: "Which animal best represents drunk confidence?",
         answer: "Peacock",
       },
       {
@@ -251,7 +255,11 @@ export const initialQuizzes = [
     id: "drunk-quiz-2",
     title: "Drunk Pub Quiz – Questionable Logic",
     questions: [
-      { id: "logic-1", question: "If you spill a drink, whose fault is it?", answer: "The table" },
+      {
+        id: "logic-1",
+        question: "If you spill a drink, whose fault is it?",
+        answer: "The table's",
+      },
       {
         id: "logic-2",
         question: "What happens when you mix all the spirits together?",
@@ -377,7 +385,7 @@ export const initialQuizzes = [
       { id: "gkm-15", question: "Which instrument measures temperature?", answer: "Thermometer" },
       { id: "gkm-16", question: "What does DNA stand for?", answer: "Deoxyribonucleic acid" },
       { id: "gkm-17", question: "Which ocean is the smallest?", answer: "Arctic" },
-      { id: "gkm-18", question: "What year has 366 days?", answer: "Leap year" },
+      { id: "gkm-18", question: "What do we call a year with 366 days?", answer: "Leap year" },
       { id: "gkm-19", question: "What organ pumps blood?", answer: "Heart" },
       { id: "gkm-20", question: "What is the capital of Canada?", answer: "Ottawa" },
     ],
